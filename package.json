@@ -2,7 +2,7 @@
   "name": "lum-bot",
   "version": "0.0.1",
   "module": "server.ts",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "bun run src/bot.ts",
     "test": "bun run src/test.ts"
