@@ -1,5 +1,5 @@
 import type { ApplicationCommand, GuildResolvable } from "discord.js";
-import type { Command } from "../interfaces/command";
+import type { Command } from "../interfaces/command.ts";
 
 // TODO: add proper type checking
 /**

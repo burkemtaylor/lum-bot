@@ -1,5 +1,5 @@
 import type { Client, Interaction } from "discord.js";
-import getLocalCommands from "../../utils/getLocalCommands";
+import getLocalCommands from "../../utils/getLocalCommands.ts";
 import assert from "assert";
 
 export default async function interactionCreate(client: Client, interaction: Interaction) {

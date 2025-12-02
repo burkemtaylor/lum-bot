@@ -1,8 +1,8 @@
 import { Client } from "discord.js";
 import assert from "assert";
-import getLocalCommands from "../../utils/getLocalCommands";
-import getApplicationCommands from "../../utils/getApplicationCommands";
-import commandComparator from "../../utils/commandComparator";
+import getLocalCommands from "../../utils/getLocalCommands.ts";
+import getApplicationCommands from "../../utils/getApplicationCommands.ts";
+import commandComparator from "../../utils/commandComparator.ts";
 
 const commands = [
   {

@@ -1,7 +1,7 @@
-import { getAllFiles } from "./getAllFiles";
+import { getAllFiles } from "./getAllFiles.ts";
 import path from "node:path";
 import { assert } from "node:console";
-import type { Command } from "../interfaces/command";
+import type { Command } from "../interfaces/command.ts";
 
 export default async function getLocalCommands(): Promise<Command[]> {
   //const commands: Command[] = [];

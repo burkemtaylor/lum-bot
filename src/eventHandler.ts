@@ -1,6 +1,6 @@
 import { Client } from "discord.js";
 import path from "node:path";
-import { getAllFiles } from "./utils/getAllFiles";
+import { getAllFiles } from "./utils/getAllFiles.ts";
 import assert from "node:assert";
 
 export async function eventHandler(client: Client) {

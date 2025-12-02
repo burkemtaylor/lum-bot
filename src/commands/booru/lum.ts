@@ -1,6 +1,6 @@
 import assert from "assert";
-import { randomInt } from "../../utils/random";
-import { type Post } from "../../interfaces/post";
+import { randomInt } from "../../utils/random.ts";
+import { type Post } from "../../interfaces/post.ts";
 import { AttachmentBuilder, Client, type Interaction } from "discord.js";
 
 export default async function lum(client: Client, interaction: Interaction) {
