@@ -1,5 +1,5 @@
 import { Client, GatewayIntentBits } from "discord.js";
-import { eventHandler } from "./eventHandler";
+import { eventHandler } from "./eventHandler.ts";
 
 const lum = new Client({
   intents: [
