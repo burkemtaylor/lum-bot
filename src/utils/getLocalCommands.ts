@@ -4,8 +4,6 @@ import { assert } from "node:console";
 import type { Command } from "../interfaces/command.ts";
 
 export default async function getLocalCommands(): Promise<Command[]> {
-  //const commands: Command[] = [];
-
   const commandCategories = await getAllFiles(path.join(__dirname, "..", "commands"), true);
 
   assert(commandCategories.length > 0, "No command categories found");
@@ -21,13 +19,10 @@ export default async function getLocalCommands(): Promise<Command[]> {
 
       assert(commandFiles.length > 0, "No command files found");
 
-      let commands: Command[] = [];
-
       return Promise.all<Command>(
         commandFiles.map(async (commandFile) => {
           const command = await import(commandFile);
 
-          console.log(commandFile);
           assert(command, "Command file does not exist");
 
           return command;
@@ -36,7 +31,6 @@ export default async function getLocalCommands(): Promise<Command[]> {
     })
   )
     .then((commands) => {
-      console.log(commands.flat());
       return commands.flat();
     })
     .finally(() => {
